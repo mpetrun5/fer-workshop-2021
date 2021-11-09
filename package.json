@@ -31,6 +31,8 @@
     "deploy:localhost": "./wait-for-it.sh localhost:8545 -- sleep 1 && hardhat deploy --network localhost",
     "deploy:local": "concurrently --raw --kill-others --success first \"hardhat node\" \"yarn deploy:localhost\"",
     "deploy:goerli": "hardhat deploy --network goerli",
+    "deploy:rinkeby": "hardhat deploy --network rinkeby",
+    "deploy:kovan": "hardhat deploy --network kovan",
     "help": "npx hardhat help",
     "node:local": "npx hardhat node",
     "script": "hardhat run",

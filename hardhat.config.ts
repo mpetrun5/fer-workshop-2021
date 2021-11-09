@@ -51,6 +51,28 @@ const config: HardhatUserConfig = {
       gasPrice: "auto",
       gasMultiplier: 1.5
     },
+    rinkeby: {
+      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: {
+        mnemonic: `${process.env.RINKENBY_MNEMONIC}`
+      },
+      chainId: 4,
+      loggingEnabled: true,
+      gas: "auto",
+      gasPrice: "auto",
+      gasMultiplier: 1.5
+    },
+    kovan: {
+      url: `https://kovan.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: {
+        mnemonic: `${process.env.RINKENBY_MNEMONIC}`
+      },
+      chainId: 42,
+      loggingEnabled: true,
+      gas: "auto",
+      gasPrice: "auto",
+      gasMultiplier: 1.5
+    },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: {

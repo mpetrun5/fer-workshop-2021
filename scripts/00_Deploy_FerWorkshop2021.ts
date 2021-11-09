@@ -6,7 +6,7 @@ const deployFunc: DeployFunction = async function (hre: HardhatRuntimeEnvironmen
   const {deploy} = deployments;
   const {deployer} = await getNamedAccounts();
 
-  await deploy("Greeter", {from: deployer, args: ["Greeter"]});
+  await deploy("FerWorkshop2021", {from: deployer, args: []});
 }
 export default deployFunc;
 
