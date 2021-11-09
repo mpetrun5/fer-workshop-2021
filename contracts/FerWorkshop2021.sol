@@ -1,8 +1,8 @@
 pragma solidity ^0.8.1;
 
 contract FerWorkshop2021 {
-    string[] public attendance;
     mapping (address => bool) public attended;
+    string[] public attendance;
 
     function confirmAttendance(string memory name) public {
 	require(!attended[msg.sender], "Student already attended");
